@@ -11,6 +11,13 @@ add_executable(
     pqc_cloud
     src/main.cpp
     src/algos/MLKEM.cpp
+    src/algos/MLDSA.cpp
+)
+
+target_include_directories(
+    pqc_cloud
+    PRIVATE 
+    src
 )
 
 target_link_libraries(
